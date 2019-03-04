@@ -39,3 +39,10 @@ relatively seamless experience.
 ### Performant
 
 Finally, Vue is seen to be performant since it takes advantage of the virtual DOM for incredibly fast re-render times. The Vue core library is also built to require minimal effort towards performance optimisation.
+
+
+**el** , to dictate the HTML element with the id of app to be the mounting point of our Vue application
+
+__Vue is a user interface library focused on the view layer. A Vue
+application needs to depend on an HTML DOM element to
+control how the element behaves.__
