@@ -1,5 +1,10 @@
 # Vue
 
+**What is Vue?**
+
+Vue is an open source JavaScript framework geared towards building user
+interfaces, created by Evan You.
+
 https://vuejs.org/
 
 Vue is said to be the progressive JavaScript framework

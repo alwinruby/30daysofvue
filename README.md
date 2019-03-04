@@ -1,6 +1,3 @@
 # 30 Days of Vue
 
-**What is Vue?**
-
-Vue is an open source JavaScript framework geared towards building user
-interfaces, created by Evan You.
+Following the book 30 Days of Vue - Fullstack.io
