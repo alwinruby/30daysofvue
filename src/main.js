@@ -5,4 +5,12 @@ new Vue({
    user: 'Alwin Solanky',
    city: 'London',
   },
+  methods: {
+    // instance methods
+    changeGreeting() {
+      this.greeting = this.greeting === 'Hi there!' ?
+      'What is up!' :
+      'Hi there!';
+    }
+  },
 });
