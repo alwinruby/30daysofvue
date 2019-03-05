@@ -2,5 +2,7 @@ new Vue({
  el: '#app',
  data: {
    greeting: 'Hi there!',
+   user: 'Alwin Solanky',
+   city: 'London',
   },
 });
