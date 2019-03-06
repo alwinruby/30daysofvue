@@ -1,16 +1,14 @@
 new Vue({
  el: '#app',
  data: {
-   greeting: 'Hi there!',
+   greeting: '', // greeting is initialized
    user: 'Alwin Solanky',
    city: 'London',
   },
   methods: {
-    // instance methods
-    changeGreeting() {
-      this.greeting = this.greeting === 'Hi there!' ?
-      'What is up!' :
-      'Hi there!';
+    addGreeting() {
+      // greeting can now be updated!
+      this.greeting = 'Hi There!';
     }
   },
 });
