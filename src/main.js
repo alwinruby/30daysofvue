@@ -2,19 +2,19 @@ new Vue({
  el: '#app',
  data: {
    greeting: 'Hi There!',
-   alertMessage: ''
+   user: 'Alwin Solanky',
+   city: 'Toronto',
+   cityImage: 'https://bit.ly/2SKJPqJ'
   },
-  methods: {
-    changeGreeting() {
-      this.greeting = this.greeting === 'Hi There!' ?
-      'What is up!' :
-      'Hi There!';
-    },
-    alertMessageGreeting() {
-      this.alertMessage = 'You typed something!';
-    },
-    alertEnterGreeting() {
-      this.alertMessage = 'You typed and pressed Enter!';
-    },
+   methods: {
+  changeCity() {
+  if (this.city === 'Toronto') {
+    this.city = 'Lagos';
+    this.cityImage = 'https://bit.ly/2Rd4gQ3';
+    } else {
+        this.city = 'Toronto';
+        this.cityImage = 'https://bit.ly/2SKJPqJ';
+      }
+    }
   }
 });
