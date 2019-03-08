@@ -16,3 +16,10 @@ The directive can be used on a template element and requires a specific syntax a
       & _items_ is the data collection
 
 Vue uses the key attribute to create unique bindings for each node’s identity      
+
+
+Should the key attribute always be used? **It’s recommended.**
+
+key attribute should only be omitted if:
+    * We intentionally want the default manner of patching elements in place for performance reasons.
+    * Or the DOM content is simple enough. 
