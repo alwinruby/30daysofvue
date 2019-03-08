@@ -15,4 +15,4 @@ The directive can be used on a template element and requires a specific syntax a
       Where _item_ is alias
       & _items_ is the data collection
 
-      
+Vue uses the key attribute to create unique bindings for each node’s identity      
