@@ -1,20 +1,6 @@
 new Vue({
- el: '#app',
- data: {
-   greeting: 'Hi There!',
-   user: 'Alwin Solanky',
-   city: 'Toronto',
-   cityImage: 'https://bit.ly/2SKJPqJ'
+   el: '#app',
+   data: {
+   numbers: [1, 10, 100, 1000, 10000],
   },
-   methods: {
-  changeCity() {
-  if (this.city === 'Toronto') {
-    this.city = 'Lagos';
-    this.cityImage = 'https://bit.ly/2Rd4gQ3';
-    } else {
-        this.city = 'Toronto';
-        this.cityImage = 'https://bit.ly/2SKJPqJ';
-      }
-    }
-  }
 });
