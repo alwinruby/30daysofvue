@@ -1,21 +1,24 @@
-new Vue({
- el: '#app',
- data: {
-   // ...
- },
-  created() {
-   axios.get(
-     'https://jsonplaceholder.typicode.com/users'
-    ).then((response) => {
-      const data = response.data;
-      const randomUser = response.data[
-       Math.floor(Math.random() * data.length)
-      ];
-      this.name = randomUser.name;
-      this.email = randomUser.email;
-      this.company.name = randomUser.company.name;
-      this.company.catchPhrase =
-      randomUser.company.catchPhrase;
-    });
-  },
+Vue.component('tweet-component', {
+ template: `
+ <div class="tweet">
+ <div class="box">
+ <article class="media">
+ <div class="media-left">
+ <figure class="image is-64x64">
+ <img :src="tweet.img">
+ </figure>
+ </div>
+ <tweet-content :tweet="tweet"></tweet-content>
+ </article>
+ </div>
+ <div class="control has-icons-left">
+ <input class="input is-small"
+ placeholder="Tweet your reply..." />
+ <span class="icon is-small is-left">
+ <i class="fas fa-envelope"></i>
+ </span>
+ </div>
+ </div>
+ `,
+ props: ['tweet']
 });
